@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prevención de Drogas</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-image: url("fondo.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            color: black;
+        }
+
+        /* MENU */
+
+        .menu{
+            width: 180px;
+            background-color: rgba(0,0,0,0.75);
+            position: fixed;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow: 3px 0px 10px rgba(0,0,0,0.5);
+        }
+
+        .menu a{
+            display: block;
+            color: white;
+            text-decoration: none;
+
+            padding: 12px;
+            margin: 8px;
+
+            width: 130px;
+            text-align: center;
+
+            border-radius: 12px;
+
+            background-color: rgba(255,255,255,0.1);
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            background-color: crimson;
+            transform: scale(1.05);
+        }
+
+        /* CONTENIDO */
+
+        .contenido{
+            margin-left: 190px;
+            padding: 15px;
+        }
+
+        /* CAJAS */
+
+        .caja{
+            background-color: rgba(255,255,255,0.80);
+
+            padding: 20px;
+            margin-bottom: 20px;
+
+            border-radius: 20px;
+
+            border: none;
+
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+
+            transition: 0.3s;
+        }
+
+        .caja:hover{
+            transform: translateY(-5px);
+        }
+
+        /* INICIO */
+
+        .inicio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo{
+            width: 900px;
+            margin-right: 0;
+
+            border-radius: 20px;
+
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .texto-inicio{
+            margin-top: 20px;
+            color: rgb(15, 15, 15);
+        }
+
+        h1{
+            color: darkred;
+            font-size: 45px;
+        }
+
+        h2{
+            color: darkblue;
+        }
+
+        h3{
+            color: #333;
+        }
+
+        p{
+            line-height: 25px;
+        }
+
+        img{
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        iframe{
+            width: 100%;
+            height: 300px;
+
+            border-radius: 15px;
+        }
+
+        ul{
+            line-height: 30px;
+        }
+
+        /* GRAFICAS */
+
+        .barra{
+            padding: 8px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+        }
+
+        /* LINKS */
+
+        a{
+            color: darkblue;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width: 768px){
+
+            .menu{
+                width: 100%;
+                height: auto;
+
+                position: relative;
+
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                padding: 10px 0;
+            }
+
+            .menu a{
+                width: auto;
+                font-size: 14px;
+                margin: 5px;
+            }
+
+            .contenido{
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .logo{
+                width: 100%;
+            }
+
+            h1{
+                font-size: 32px;
+            }
+
+            iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+            .caja{
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <div class="menu">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#evidencia">Primer Parcial</a>
+
+        <a href="#problemas">Problemas</a>
+
+        <a href="#pronosticos">Pronósticos</a>
+
+        <a href="#video">Video</a>
+
+        <a href="#juego">Juego</a>
+
+        <a href="#fuentes">Fuentes</a>
+
+        <a href="#ayuda">Ayuda</a>
+
+    </div>
+
+    <!-- CONTENIDO -->
+
+    <div class="contenido">
+
+        <!-- INICIO -->
+
+        <div class="caja inicio" id="inicio">
+
+            <img class="logo" src="Proyecto-Drogas.jpg">
+
+            <div class="texto-inicio">
+
+                <h1>Prevención de Drogas</h1>
+
+                <p>
+                    Decide tu futuro: Estás a tiempo
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- QUE SON -->
+
+        <div class="caja">
+
+            <h2>¿Qué son las drogas?</h2>
+
+            <p>
+                Las drogas son sustancias que afectan el cuerpo y la mente.
+                Algunas pueden causar adicción y problemas de salud física
+                y emocional.
+            </p>
+
+            <p>
+                Muchos jóvenes consumen drogas por curiosidad,
+                presión social o problemas emocionales.
+            </p>
+
+            <p>
+                El consumo de drogas puede afectar la escuela,
+                la familia y la salud mental.
+            </p>
+
+        </div>
+
+        <!-- EVIDENCIA -->
+
+        <div class="caja" id="evidencia">
+
+            <h2>Evidencia del Primer Parcial</h2>
+
+            <img src="evidencia.jpg">
+
+            <p>
+                En el primer parcial se investigaron instituciones
+                y programas relacionados con la prevención de adicciones.
+            </p>
+
+            <p>
+                El objetivo fue conocer cómo ayudan a las personas
+                y prevenir el consumo de drogas en jóvenes.
+            </p>
+
+            <p>
+                También se investigaron campañas y programas
+                del gobierno para informar sobre las consecuencias
+                del consumo de sustancias.
+            </p>
+
+        </div>
+
+        <!-- PROBLEMAS -->
+
+        <div class="caja" id="problemas">
+
+            <h2>Gráficos de Problemas y Edades</h2>
+
+            <h3>Consumo por edades</h3>
+
+            <p>12 a 14 años</p>
+
+            <div class="barra" style="background-color: lightblue; width:20%;">
+                20%
+            </div>
+
+            <p>
+                Algunos jóvenes comienzan por curiosidad.
+            </p>
+
+            <p>15 a 17 años</p>
+
+            <div class="barra" style="background-color: orange; width:45%;">
+                45%
+            </div>
+
+            <p>
+                Es la edad donde existe más presión social.
+            </p>
+
+            <p>18 a 20 años</p>
+
+            <div class="barra" style="background-color: red; width:35%;">
+                35%
+            </div>
+
+            <p>
+                Existe más acceso a fiestas y alcohol.
+            </p>
+
+            <br>
+
+            <h3>Principales problemas</h3>
+
+            <p>Alcohol</p>
+
+            <div class="barra" style="background-color: purple; width:40%;">
+                40%
+            </div>
+
+            <p>
+                Es una de las sustancias más consumidas.
+            </p>
+
+            <p>Tabaco</p>
+
+            <div class="barra" style="background-color: gray; width:25%;">
+                25%
+            </div>
+
+            <p>
+                Puede causar enfermedades respiratorias.
+            </p>
+
+            <p>Vapeadores</p>
+
+            <div class="barra" style="background-color: green; width:20%;">
+                20%
+            </div>
+
+            <p>
+                Muchos creen que no hacen daño.
+            </p>
+
+            <p>Drogas ilegales</p>
+
+            <div class="barra" style="background-color: black; width:15%;">
+                15%
+            </div>
+
+            <p>
+                Pueden afectar la salud física y mental.
+            </p>
+
+        </div>
+
+        <!-- PRONOSTICOS -->
+
+        <div class="caja" id="pronosticos">
+
+            <h2>Pronósticos a 5 años</h2>
+
+            <ul>
+
+                <li>Más campañas de prevención.</li>
+
+                <li>Mayor uso de vapeadores.</li>
+
+                <li>Más apoyo psicológico.</li>
+
+                <li>Mayor información en escuelas.</li>
+
+                <li>Programas contra adicciones.</li>
+
+            </ul>
+
+            <p>
+                En México se han realizado campañas para prevenir
+                el consumo de drogas y ayudar a los jóvenes.
+            </p>
+
+        </div>
+
+       <!-- VIDEO -->
+
+<div class="caja" id="video">
+
+    <h2>Video Informativo</h2>
+
+    <p>
+        Da clic en el botón para ver el video:
+    </p>
+
+    <a href="https://youtu.be/L9BDFFi36J4?si=wUPNTp-5hqtb0rkf"
+    target="_blank">
+
+        Ver Video en YouTube
+
+    </a>
+
+</div>
+
+<!-- JUEGO -->
+
+<div class="caja" id="juego">
+
+    <h2>Juego Interactivo</h2>
+
+    <p>
+        Da clic en el siguiente enlace para jugar:
+    </p>
+
+    <a href="https://create.kahoot.it/share/consumo-de-drogas/e3da1595-b7e8-469d-a8f7-743dc970e2bf">
+
+        Entrar al Kahoot
+
+    </a>
+
+</div>
+
+<!-- FUENTES -->
+
+<div class="caja" id="fuentes">
+
+    <h2>Fuentes de Información</h2>
+
+    <p>Gobierno de México:</p>
+
+    <a href="https://www.gob.mx/salud/prensa/01-800-911-2000-para-atender-dudas-y-problemas-de-adicciones">
+        https://www.gob.mx/salud/prensa/01-800-911-2000-para-atender-dudas-y-problemas-de-adicciones
+    </a>
+
+    <br><br>
+
+    <a href="https://www.gob.mx/lineadelavida">
+        https://www.gob.mx/lineadelavida
+    </a>
+
+    <br><br>
+
+    <a href="https://imsama.edomex.gob.mx/">
+        https://imsama.edomex.gob.mx/
+    </a>
+
+    <br><br>
+
+    <p>IMSS:</p>
+
+    <a href="https://www.imss.gob.mx/salud-en-linea/adicciones">
+        https://www.imss.gob.mx/salud-en-linea/adicciones
+    </a>
+
+</div>
+
+<!-- CENTROS Y NUMEROS DE AYUDA -->
+
+<div class="caja" id="ayuda">
+
+    <h2>Centros y Números de Ayuda</h2>
+
+    <p>
+        Si una persona necesita ayuda por problemas de adicciones,
+        existen líneas de apoyo y centros especializados.
+    </p>
+
+    <h3>Números de ayuda</h3>
+
+    <p>
+        Línea de la Vida: 800 911 2000
+    </p>
+
+    <p>
+        Atención gratuita las 24 horas.
+    </p>
+
+    <h3>Centros cercanos a Tequixquiac</h3>
+
+    <p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=AA+Grupo+Reflexión+Tequixquiac"
+        target="_blank">
+
+            AA Grupo Reflexión - Tequixquiac
+
+        </a>
+
+    </p>
+
+    <p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Centro+de+rehabilitación+a+las+adicciones+jóvenes+fortaleza+Zumpango"
+        target="_blank">
+
+            Jóvenes Fortaleza - Zumpango
+
+        </a>
+
+    </p>
+
+    <p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Centro+de+Rehabilitación+Hay+una+Esperanza+Tepotzotlán"
+        target="_blank">
+
+            Hay una Esperanza - Tepotzotlán
+
+        </a>
+
+    </p>
+
+    <p>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Fortaleza+y+Esperanza+SELAH+Zumpango"
+        target="_blank">
+
+            Fortaleza y Esperanza SELAH - Zumpango
+
+        </a>
+
+    </p>
+
+</div>
